@@ -174,3 +174,182 @@ footer {
     text-align: left;
   }
 }
+
+/* ===== My Virtual Dog section ===== */
+#my-dog {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+#my-dog h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #4a7c3a;
+}
+
+/* Adoption form */
+.adopt-form {
+  max-width: 420px;
+  margin: 0 auto 2rem;
+  background-color: #fff;
+  border: 1px solid #e5dcc8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #5a3e1e;
+  font-weight: bold;
+}
+
+.form-field select,
+.form-field input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbb89e;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-field select:focus,
+.form-field input:focus {
+  outline: none;
+  border-color: #4a7c3a;
+}
+
+.name-error {
+  color: #c0392b;
+  font-size: 0.85rem;
+  min-height: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.adopt-btn {
+  width: 100%;
+  background-color: #4a7c3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.adopt-btn:hover {
+  background-color: #3d6b30;
+}
+
+/* Dog status panel */
+.dog-status {
+  max-width: 420px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #4a7c3a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.dog-status h3 {
+  font-size: 1.3rem;
+  color: #4a7c3a;
+  margin-bottom: 0.8rem;
+}
+
+.dog-status-img {
+  width: 180px;
+  margin: 0 auto 0.8rem;
+  border-radius: 10px;
+  background-color: #f5f0e6;
+}
+
+.dog-stats {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.dog-stats li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #f0e8d8;
+  font-size: 0.95rem;
+}
+
+.dog-stats li:last-child {
+  border-bottom: none;
+}
+
+.dog-stats span {
+  font-weight: bold;
+  color: #5a3e1e;
+}
+
+/* Happiness bar */
+.happiness-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e5dcc8;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.happiness-fill {
+  height: 100%;
+  background-color: #e8a838;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.action-btn {
+  flex: 1;
+  background-color: #e0b04a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: #c89438;
+}
+
+/* ===== Responsive: My Virtual Dog on phones ===== */
+@media (max-width: 600px) {
+  .adopt-form,
+  .dog-status {
+    padding: 1rem;
+  }
+
+  .dog-status-img {
+    width: 140px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}

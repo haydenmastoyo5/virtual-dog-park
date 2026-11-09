@@ -123,6 +123,62 @@
       </article>
 
     </section>
+
+    <!-- ===== My Virtual Dog ===== -->
+    <section id="my-dog">
+      <h2>My Virtual Dog</h2>
+      <p class="section-hint">
+        Adopt your own virtual dog! Pick a breed, give it a name, then
+        keep it happy with Feed and Play.
+      </p>
+
+      <!-- Adoption form -->
+      <form id="adopt-form" class="adopt-form">
+        <div class="form-field">
+          <label for="breed-select">Choose a breed:</label>
+          <select id="breed-select">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="dog-name">Dog name (up to 20 characters):</label>
+          <input type="text" id="dog-name" maxlength="20"
+                 placeholder="e.g. Buddy">
+        </div>
+
+        <!-- Validation message — shown only when the name is invalid -->
+        <p id="name-error" class="name-error" role="alert"></p>
+
+        <button type="submit" class="adopt-btn">Adopt</button>
+      </form>
+
+      <!-- Dog status panel — hidden until a dog is adopted -->
+      <div id="dog-status" class="dog-status" hidden>
+        <h3>Your Adopted Dog</h3>
+        <img id="dog-status-img" src="" alt="" class="dog-status-img">
+        <ul class="dog-stats">
+          <li>Name: <span id="stat-name"></span></li>
+          <li>Breed: <span id="stat-breed"></span></li>
+          <li>Day: <span id="stat-day"></span></li>
+          <li>Growth stage: <span id="stat-stage"></span></li>
+          <li>Happiness: <span id="stat-happiness"></span>/100</li>
+        </ul>
+
+        <!-- Visual happiness bar -->
+        <div class="happiness-bar">
+          <div id="happiness-fill" class="happiness-fill"></div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="action-buttons">
+          <button id="feed-btn" class="action-btn">Feed (+10 happiness)</button>
+          <button id="play-btn" class="action-btn">Play (+10 happiness)</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ===== Footer ===== -->
