@@ -270,10 +270,23 @@ footer {
 }
 
 .dog-status-img {
-  width: 180px;
   margin: 0 auto 0.8rem;
   border-radius: 10px;
   background-color: #f5f0e6;
+  transition: width 0.3s ease;
+}
+
+/* Growth stage image sizes — puppy is small, adult is full size */
+.growth-puppy {
+  width: 100px;
+}
+
+.growth-young {
+  width: 140px;
+}
+
+.growth-adult {
+  width: 180px;
 }
 
 .dog-stats {
@@ -338,6 +351,60 @@ footer {
   background-color: #c89438;
 }
 
+/* Next Day button — slightly different color to distinguish from Feed/Play */
+.next-day-btn {
+  background-color: #6ba3c8;
+}
+
+.next-day-btn:hover {
+  background-color: #5088ad;
+}
+
+/* Bar labels */
+.bar-label {
+  font-size: 0.85rem;
+  color: #5a3e1e;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+/* Growth bar — similar to happiness bar but green */
+.growth-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e5dcc8;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.growth-fill {
+  height: 100%;
+  background-color: #4a7c3a;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Start Over button — danger style, full width */
+.start-over-btn {
+  width: 100%;
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+.start-over-btn:hover {
+  background-color: #a0281b;
+}
+
 /* ===== Responsive: My Virtual Dog on phones ===== */
 @media (max-width: 600px) {
   .adopt-form,
@@ -345,7 +412,16 @@ footer {
     padding: 1rem;
   }
 
-  .dog-status-img {
+  /* Smaller image sizes on phones */
+  .growth-puppy {
+    width: 80px;
+  }
+
+  .growth-young {
+    width: 110px;
+  }
+
+  .growth-adult {
     width: 140px;
   }
 
