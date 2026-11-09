@@ -1,0 +1,176 @@
+/* ===== Reset & base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fdf8f0;
+}
+
+/* ===== Welcome banner ===== */
+.welcome-banner {
+  background-color: #4a7c3a;       /* park-green */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.welcome-banner h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+
+/* ===== Encyclopedia section ===== */
+#encyclopedia {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+#encyclopedia h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #4a7c3a;
+}
+
+.section-hint {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+#breed-count {
+  font-weight: bold;
+  color: #4a7c3a;
+}
+
+/* ===== Breed cards ===== */
+.breed-card {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #e5dcc8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.breed-img {
+  width: 200px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #f5f0e6;
+}
+
+.breed-info {
+  flex: 1;
+}
+
+.breed-info h3 {
+  font-size: 1.4rem;
+  color: #5a3e1e;
+  margin-bottom: 0.5rem;
+}
+
+.breed-info p {
+  margin-bottom: 0.6rem;
+}
+
+/* ===== Care tips (hidden until toggled) ===== */
+.care-tips {
+  display: none;
+  background-color: #f0f8e8;
+  border-left: 4px solid #4a7c3a;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.8rem;
+}
+
+.care-tips.visible {
+  display: block;
+}
+
+.care-tips h4 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #4a7c3a;
+}
+
+.care-tips ul {
+  list-style-position: inside;
+  padding-left: 0.3rem;
+}
+
+.care-tips li {
+  margin-bottom: 0.3rem;
+}
+
+/* ===== Toggle button ===== */
+.toggle-btn {
+  margin-top: 0.8rem;
+  background-color: #4a7c3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #3d6b30;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #5a3e1e;
+  color: #f5f0e6;
+  font-size: 0.85rem;
+}
+
+/* ===== Responsive: phones ===== */
+@media (max-width: 600px) {
+  .welcome-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .breed-card {
+    flex-direction: column;      /* stack image above text */
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .breed-img {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .breed-info p {
+    text-align: left;
+  }
+}

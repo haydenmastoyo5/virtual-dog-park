@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <!-- Original illustration of a Golden Retriever — fluffy golden coat, friendly face, wagging tail -->
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="288" rx="125" ry="10" fill="#cbb89e" opacity="0.35"/>
+
+  <!-- Back legs -->
+  <rect x="235" y="195" width="24" height="85" rx="12" fill="#c89438"/>
+  <rect x="268" y="195" width="24" height="85" rx="12" fill="#b67e2a"/>
+
+  <!-- Front legs -->
+  <rect x="128" y="195" width="24" height="85" rx="12" fill="#e0b04a"/>
+  <rect x="162" y="195" width="24" height="85" rx="12" fill="#e0b04a"/>
+
+  <!-- Fluffy tail — waving up -->
+  <path d="M278 160 Q312 135 316 108 Q322 120 320 138 Q310 155 290 168" fill="#e0b04a" stroke="#c89438" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Fluffy body -->
+  <ellipse cx="200" cy="165" rx="105" ry="55" fill="#e0b04a"/>
+
+  <!-- Fur texture tufts on back -->
+  <path d="M110 145 Q120 132 130 145" fill="none" stroke="#c89438" stroke-width="3" stroke-linecap="round"/>
+  <path d="M145 135 Q155 122 165 135" fill="none" stroke="#c89438" stroke-width="3" stroke-linecap="round"/>
+  <path d="M185 130 Q195 117 205 130" fill="none" stroke="#c89438" stroke-width="3" stroke-linecap="round"/>
+  <path d="M225 135 Q235 122 245 135" fill="none" stroke="#c89438" stroke-width="3" stroke-linecap="round"/>
+  <path d="M260 145 Q270 132 280 145" fill="none" stroke="#c89438" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Lighter chest/belly -->
+  <ellipse cx="175" cy="192" rx="60" ry="28" fill="#f0cd72"/>
+
+  <!-- Neck ruff -->
+  <path d="M115 150 Q100 134 106 108 L146 126 L140 175 Z" fill="#e0b04a"/>
+
+  <!-- Head -->
+  <ellipse cx="90" cy="108" rx="38" ry="33" fill="#e0b04a"/>
+
+  <!-- Snout -->
+  <ellipse cx="64" cy="122" rx="28" ry="20" fill="#f0cd72"/>
+
+  <!-- Nose -->
+  <ellipse cx="48" cy="117" rx="10" ry="7" fill="#241710"/>
+
+  <!-- Friendly mouth — open smile -->
+  <path d="M48 127 Q58 140 72 134" fill="none" stroke="#9a6a1e" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M58 134 Q62 140 66 134" fill="#c63d2f" opacity="0.5"/>
+
+  <!-- Eyes -->
+  <circle cx="92" cy="100" r="6" fill="#241710"/>
+  <circle cx="90" cy="98" r="2" fill="#fff"/>
+
+  <!-- Floppy ears -->
+  <path d="M106 88 Q88 92 80 108 Q72 140 92 158 Q108 148 114 132 Q108 108 108 88 Z" fill="#c89438"/>
+
+  <!-- Cheek fluff -->
+  <path d="M78 118 Q72 128 80 138" fill="none" stroke="#c89438" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Blue collar with tag -->
+  <rect x="96" y="128" width="42" height="10" rx="4" fill="#3a7cb8"/>
+  <circle cx="117" cy="138" r="5" fill="#f0c020"/>
+</svg>
