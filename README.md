@@ -64,27 +64,3 @@ The growth stage is shown as **text** in the stats list, as a **green growth bar
 Pet progress (name, breed, day, and happiness) is saved in the **browser's `localStorage`** under the key `virtualDogParkPetV1`. This data lives only in the visitor's own browser on their own computer — it is **not** uploaded to a server, not stored in a GitHub account, and not shared across devices or browsers. Clearing the browser's site data or using a different browser will start fresh.
 
 Only one dog is stored at a time. Adopting a new dog or clicking Start Over replaces or removes the saved data.
-
-## Manual Testing Checklist
-
-These checks should be performed manually in a browser. They have not been auto-run by any test script.
-
-- [ ] Page loads without console errors.
-- [ ] All three breed illustrations display in the encyclopedia section.
-- [ ] "Show care tips" button toggles the tips panel open and closed for each breed.
-- [ ] Adopting with an empty name shows an error message and does not adopt.
-- [ ] Adopting with a name longer than 20 characters shows an error message.
-- [ ] Entering a valid name and clicking Adopt shows the dog status panel.
-- [ ] Dog starts on Day 1, Puppy stage, happiness 50.
-- [ ] Feed button increases happiness by 10 and caps at 100.
-- [ ] Play button increases happiness by 10 and caps at 100.
-- [ ] Next Day increases the day by 1 and decreases happiness by 5.
-- [ ] Happiness never drops below 0 after Next Day.
-- [ ] Growth stage changes from Puppy to Young Dog on Day 2, and to Adult Dog on Day 4.
-- [ ] Growth stage text is visible in the stats list (not only color or size).
-- [ ] Growth bar fills as the dog grows.
-- [ ] Illustration size changes with the growth stage.
-- [ ] Refreshing the page restores the saved dog automatically.
-- [ ] Start Over asks for confirmation. Canceling keeps the dog.
-- [ ] Start Over (confirmed) deletes the dog and shows the adoption form.
-- [ ] Page layout looks correct on a narrow phone-width viewport.
